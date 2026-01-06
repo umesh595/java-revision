@@ -1,7 +1,14 @@
-public class Main{
-    public static void main(String[] args){
-String s1="hello";
-String s2="world";
-System.out.println(s1+" "+s2);
+class formatspecifiers{
+    private int secret=10;
+    public int visible=42;
+    void access(){
+        System.out.println(secret+ " "+visible);
+    }
 }
+public class Main {
+    public static void main(){
+        formatspecifiers f=new formatspecifiers();
+        System.out.println(f.visible);
+        f.access();
+    }
 }
